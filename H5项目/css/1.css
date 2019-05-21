@@ -1,0 +1,161 @@
+@keyframes move123 {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.music_icon {
+  position: absolute;
+  width: 0.93333333rem;
+  height: 0.93333333rem;
+  background: url(../img/music.svg) no-repeat;
+  background-size: contain;
+  right: 20px;
+  top: 20px;
+  animation: move123  1s linear infinite;
+  z-index: 999;
+}
+html {
+  width: 100%;
+  height: 100%;
+}
+body {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+.page-wrap {
+  overflow: hidden;
+}
+.page {
+  display: none;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.contain {
+  width: 100%;
+  height: 100%;
+  display: none;
+  position: relative;
+  z-index: 0;
+}
+.current .contain,
+.slide .contain {
+  display: block;
+}
+.current {
+  display: block;
+  z-index: 1;
+}
+.slide {
+  display: block;
+  z-index: 2;
+}
+.swipe {
+  display: block;
+  z-index: 3;
+  transition-duration: 0ms!important;
+  -webkit-transition-duration: 0ms !important;
+}
+.app1,
+.app2,
+.app3,
+.app4,
+.app5 {
+  background: url(../img/beij.jpg);
+  background-image: 100%;
+}
+.app1 .beij {
+  width: 100%;
+  height: 100%;
+  animation: flash  1s linear infinite ;
+}
+.app1 .beij img {
+  width: 100%;
+  height: 100%;
+}
+.app1 .laoban {
+  width: 3.50666667rem;
+  height: 2.30666667rem;
+  position: absolute;
+  top: 7%;
+  left: 50%;
+  margin-left: -1.76rem;
+  animation: bounceInDown  1s linear ;
+}
+.app1 .laoban img {
+  width: 100%;
+  height: 100%;
+}
+.app1 .xixian {
+  width: 8.97333333rem;
+  height: 2.73333333rem;
+  position: absolute;
+  top: 19%;
+  left: 50%;
+  margin-left: -4.42666667rem;
+}
+.app1 .xixian img {
+  width: 100%;
+  height: 100%;
+}
+.app1 .liaojie {
+  width: 6.73333333rem;
+  height: 1.41333333rem;
+  margin-left: -3.36rem;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  animation: flipInX  1s linear ;
+}
+.app1 .liaojie img {
+  width: 100%;
+  height: 100%;
+}
+.app1 .xileft {
+  position: absolute;
+  top: 45%;
+  left: 13%;
+  animation: zoomIn   1s linear  ;
+  width: 2rem;
+  height: 2rem;
+}
+.app1 .xireg {
+  position: absolute;
+  top: 45%;
+  left: 70%;
+  animation: zoomIn   1s  linear  ;
+  width: 2rem;
+  height: 2rem;
+}
+.app1 .tan {
+  width: 8rem;
+  height: 6.66666667rem;
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  margin-left: -4rem;
+  animation: bounceInUp  1s linear ;
+}
+.app1 .tan img {
+  width: 100%;
+  height: 100%;
+}
+.app1 .tan .renjian {
+  width: 5.33333333rem;
+  height: 5.33333333rem;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -2.66666667rem;
+  animation: bounceInUp  1s    linear ;
+}
+.app1 .tan .renjian img {
+  animation: wobble  1s    infinite ;
+}
